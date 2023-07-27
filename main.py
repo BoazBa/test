@@ -15,8 +15,8 @@ log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
 NUM_CLASSES = 10
 BATCH_SIZE = 128
-EPOCHS = 100
-LEARNING_RATE = 1.0
+EPOCHS = 1000
+LEARNING_RATE = 0.1
 
 if "BATCH_SIZE" in os.environ:
     BATCH_SIZE = int(os.environ["BATCH_SIZE"])
